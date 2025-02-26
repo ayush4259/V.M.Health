@@ -1,0 +1,141 @@
+/* CSS - No Changes Needed, keep the same styles */
+:root {
+    --primary-color: #fffefe;
+    --secondary-color: #ccd6f6;
+    --text-color: #e5d9d3fc;
+    --celestial-blue: #3da9de;
+    --white: #ffffff;
+    --red: #ff4d4d;
+    --card-gradient-start: #2d8bff;
+    --card-gradient-end: #ddd8d8cc;
+}
+
+.services-section {
+    background: linear-gradient(to bottom, var(--celestial-blue), var(--white), var(--red));
+    color: var(--text-color);
+    padding: 4rem 2rem;
+}
+
+.services-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.services-section h2 {
+    color: var(--secondary-color);
+    margin-bottom: 3rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    background: linear-gradient(to bottom, var(--card-gradient-start), var(--card-gradient-end));
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 219, 219, 0.688);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.service-card img { /* Style the logos */
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service-card h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.service-card p {
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.service-card .learn-more {
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.service-card .learn-more:hover {
+    color: var(--celestial-blue);
+}
+
+/* Keyframe Animations for Transitions */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInBottom {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Apply Animations to Elements */
+.services-section h2 {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.service-card {
+    animation: slideInBottom 0.5s ease-in-out backwards;
+}
+
+.service-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.service-card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.service-card:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+.service-card:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+.service-card:nth-child(6) {
+    animation-delay: 1s;
+}
+
+.service-card:nth-child(7) {
+    animation-delay: 1.2s;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}

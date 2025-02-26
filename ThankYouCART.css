@@ -1,0 +1,80 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #476efde4,#e1fcff, #ff6060); /* Deep Gradient */
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Thank You Container Styles */
+.thank-you-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #e02f2f;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Green Tick Style */
+.green-tick {
+    color: #4CAF50;
+    margin-bottom: 1rem;
+}
+
+/* Heading Styles */
+h1 {
+    color: #fbfeff;
+    margin-bottom: 1rem;
+    font-size: 2em;
+}
+
+/* Order Placed Style */
+.order-placed {
+    margin-bottom: 1.5rem;
+    font-size: 1.2em;
+    color: #bfbdbdc7;
+}
+
+/* Loading Bar Styles */
+.loading-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #ddd;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    overflow: hidden; /* Ensure the progress bar stays within the container */
+}
+
+.loading-progress {
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(to right, #0bf81b, #4dd0e1);
+    border-radius: 4px;
+    animation: load 3s linear forwards;
+}
+
+/* Redirect Message Styles */
+.redirect-message {
+    font-style: italic;
+    color: #ffffff;
+}
+
+/* Keyframes for Loading Animation */
+@keyframes load {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}

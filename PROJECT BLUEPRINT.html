@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Mental Health Support</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* CSS */
+        :root {
+            --primary-color: #64ffda;
+            --secondary-color: #ccd6f6;
+            --text-color: #8892b0;
+            --dark-bg: #0a192f;
+            --gradient-start: #2193b0;
+            --gradient-end: #6dd5ed;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--dark-bg);
+            color: var(--text-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+        }
+
+        section h2 {
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Features Section */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .feature-card {
+            padding: 1.5rem;
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-card i {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 0.75rem;
+        }
+
+        /* Technology Stack Section */
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .tech-item {
+            padding: 1rem;
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 0.5rem;
+        }
+
+        /* Future Trends Section */
+        .future-trends ul {
+            list-style-type: disc;
+            padding-left: 2rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 4rem;
+            padding: 1rem;
+            background-color: rgba(255, 255, 255, 0.05);
+            border-top: 1px solid var(--primary-color);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Virtual Mental Health Support</h1>
+            <p>A platform for accessible and convenient mental health care.</p>
+        </div>
+    </header>
+
+    <section class="container">
+        <h2>Introduction</h2>
+        <p>Mental health is a crucial part of our well-being, but many people struggle to get the help they need. The Virtual
+            Mental Health Support platform aims to make mental health care more accessible. It offers a simple, user
+            friendly, and confidential online space where people can find support. Whether someone needs therapy, advice,
+            or a safe space to talk, this platform provides the help they need, no matter where they live or how busy they
+            are. It's a convenient and supportive solution for improving mental health.</p>
+    </section>
+
+    <section class="container">
+        <h2>Aim & Objective</h2>
+        <p>The aim of this presentation is to address why many people hesitate to seek help for mental health issues. Many
+            suffer in silence because they feel uncomfortable going to a clinic or therapy sessions. Our goal is to show
+            that virtual mental health support, available through our website, offers a convenient and private way for people
+            to get the help they need without the fear or hesitation of in-person visits. We want to make mental health
+            support more accessible and less intimidating for everyone.</p>
+    </section>
+
+    <section class="container features">
+        <h2>Features</h2>
+        <div class="feature-card">
+            <i class="fas fa-comments"></i>
+            <h3>AI ChatBot</h3>
+            <p>Engage users in Real-Time conversations.</p>
+        </div>
+
+        <div class="feature-card">
+            <i class="fas fa-heart"></i>
+            <h3>Mood Tracking</h3>
+            <p>Help users monitor their mental health.</p>
+        </div>
+
+        <div class="feature-card">
+            <i class="fas fa-gamepad"></i>
+            <h3>Gamified MHealth Activities</h3>
+            <p>Daily challenges like Breathing. Journal, Award, Virtual badges and Streaks for completing activities.</p>
+        </div>
+
+        <div class="feature-card">
+            <i class="fas fa-user-secret"></i>
+            <h3>Anonymous identity</h3>
+            <p>Users can seek help without revealing their identity.</p>
+        </div>
+
+        <div class="feature-card">
+            <i class="fas fa-exclamation-triangle"></i>
+            <h3>Crisis SOS Button</h3>
+            <p>Offering Crisis SOS Button with integration of Google Map API.</p>
+        </div>
+
+        <div class="feature-card">
+            <i class="fas fa-user-md"></i>
+            <h3>Healthcare Providers</h3>
+            <p>Ask your primary care physician for recommendations or referrals to virtual mental health specialists.</p>
+        </div>
+
+        <div class="feature-card">
+            <i class="fas fa-book-open"></i>
+            <h3>Self-Help Guide</h3>
+            <p>Providing self-help tools and packages like articles, meditation guide podcast, stress management techniques
+                etc.</p>
+        </div>
+    </section>
+
+    <section class="container tech-stack">
+        <h2>Technology Stack</h2>
+        <div class="tech-item">
+            <h3>Front-end</h3>
+            <p>HTML, CSS, JavaScript, React</p>
+        </div>
+        <div class="tech-item">
+            <h3>Back-end</h3>
+            <p>Node.js, SQL</p>
+        </div>
+    </section>
+
+    <section class="container future-trends">
+        <h2>Future Trends</h2>
+        <ul>
+            <li>Advanced AI therapy chatbots with voice assistance.</li>
+            <li>Expand Services: Introduce 24/7 chat support, more therapists, and personalized therapy & diet plans to
+                cater to diverse needs.</li>
+            <li>AI Integration: Implement AI tools for mental health assessments selfhelp resources.</li>
+            <li>Mobile App Development: Launch a mobile app to make it easier for users to access mental health support
+                anytime.</li>
+            <li>Partnerships: Collaborate with schools, workplaces, and healthcare providers to offer specialized mental
+                health services.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Virtual Mental Health Support. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

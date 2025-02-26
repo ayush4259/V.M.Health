@@ -1,0 +1,35 @@
+<!-- HTML -->
+<section class="register-section">
+    <div class="register-container">
+        <h2>Create an Account</h2>
+        <link rel="stylesheet" href="Registration Page.css">
+        <script defer src="Registration page.js"></script>
+        <form class="register-form">
+            <div class="form-group">
+                <label for="email">Email ID</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Your Password" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <div class="phone-input">
+                    <select id="countryCode" name="countryCode">
+                        <option value="+1">🇺🇸 +1 (US)</option>
+                        <option value="+44">🇬🇧 +44 (UK)</option>
+                        <option value="+91">🇮🇳 +91 (IN)</option>
+                    </select>
+                    <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+                    <span class="verification-tick"></span>
+                </div>
+            </div>
+            <button type="submit" class="register-button">Register</button>
+        </form>
+        <div class="success-message">
+            Your account is generated! <span class="success-tick">✓</span>
+        </div>
+    </div>
+    <div class="parallax-bg"></div>
+</section>

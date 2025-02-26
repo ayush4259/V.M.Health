@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=width=device-width, initial-scale=1.0">
+    <title>Secure Payment Gateway</title>
+    <link rel="stylesheet" href="Payment Gateway.css">
+    <script defer src="Payment Gateway.js"></script>
+</head>
+
+<body>
+    <section class="payment-page">
+        <div class="payment-container">
+            <h2>Secure Payment</h2>
+            <p>Choose your payment method:</p>
+
+            <div class="payment-options">
+                <div class="card-payment">
+                    <h3>Credit/Debit Card</h3>
+                    <div class="card-logos">
+                        <i class="fab fa-cc-visa fa-2x" title="Visa"></i>
+                        <i class="fab fa-cc-mastercard fa-2x" title="Mastercard"></i>
+                        <i class="fab fa-cc-amex fa-2x" title="American Express"></i>
+                        <i class="fab fa-cc-discover fa-2x" title="Discover"></i>
+                    </div>
+                    <form id="cardForm">
+                        <div class="form-group">
+                            <label for="cardNumber">Card Number</label>
+                            <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter card number" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="expiry">Expiry Date</label>
+                            <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" name="cvv" placeholder="CVV" required>
+                        </div>
+                        <button type="submit" class="pay-button">Pay with Card</button>
+                    </form>
+                </div>
+
+                <div class="upi-payment">
+                    <h3>UPI Payment</h3>
+                    <i class="fab fa-google-pay fa-3x" title="Google Pay"></i>
+                    <i class="fab fa-paypal fa-3x" title="PayPal"></i>
+                    <form id="upiForm">
+                        <div class="form-group">
+                            <label for="upiId">UPI ID</label>
+                            <input type="text" id="upiId" name="upiId" placeholder="Enter UPI ID" required>
+                        </div>
+                        <button type="submit" class="pay-button">Pay with UPI</button>
+                    </form>
+                </div>
+            </div>
+
+            <button class="cancel-button">Cancel Payment</button>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

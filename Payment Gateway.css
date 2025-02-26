@@ -1,0 +1,134 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #b3e7ff, #FCE4EC, #FFFFFF);
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Payment Page Styles */
+.payment-page {
+    width: 80%;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.payment-container {
+    margin-bottom: 2rem;
+}
+
+.payment-page h2 {
+    color: #56ccf2;
+    margin-bottom: 1.5rem;
+    font-size: 2em;
+}
+
+.payment-page p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1em;
+    color: #777;
+}
+
+/* Payment Options Styles */
+.payment-options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card-payment,
+.upi-payment {
+    width: 45%;
+    margin: 1rem;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.payment-options h3 {
+    color: #64b5f6;
+    margin-bottom: 1rem;
+}
+
+.card-logos {
+    margin-bottom: 1rem;
+    font-size: 2em;
+    color: #56ccf2;
+}
+
+.card-logos i {
+    margin-right: 0.5rem;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+/* Button Styles */
+.pay-button,
+.cancel-button {
+    background: linear-gradient(to right, #64b5f6, #4dd0e1);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 1.1em;
+    margin-top: 1rem;
+}
+
+.pay-button:hover {
+    background: linear-gradient(to left, #64b5f6, #4dd0e1);
+}
+
+.cancel-button {
+    background: #ff655a;
+    margin-top: 2rem;
+}
+
+.cancel-button:hover {
+    background: #ff1a1a;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .card-payment,
+    .upi-payment {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .payment-options {
+        flex-direction: column;
+    }
+}
+

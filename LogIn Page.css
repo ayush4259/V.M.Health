@@ -1,0 +1,155 @@
+/* CSS */
+:root {
+    --primary-color: #c8fef0;
+    --secondary-color: #ccd6f6;
+    --text-color: #8892b0;
+    --celestial-blue: #3da9de;
+    --white: #ffffff;
+    --red: #ff4d4d;
+}
+
+.login-section {
+    background: linear-gradient(to bottom, var(--secondary-color), var(--white), var(--celestial-blue));
+    color: var(--text-color);
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://wallpapercave.com/uwp/uwp3715998.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    z-index: 1;
+    opacity: 0.4;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 2;
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+.login-container h2 {
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: var(--text-color);
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px var(--primary-color);
+}
+
+.login-button {
+    background: linear-gradient(to right, var(--red), var(--celestial-blue));
+    color: var(--white);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+}
+
+.login-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.social-login {
+    margin-top: 2rem;
+}
+
+.social-login button {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--text-color);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.social-login button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.social-login i {
+    margin-right: 0.5rem;
+}
+
+.animation-element {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    animation: float 6s infinite linear;
+    opacity: 0.6;
+}
+
+/* Keyframes for Floating Animation */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .login-container {
+        max-width: 90%;
+        padding: 1.5rem;
+    }
+
+    .social-login button {
+        display: block;
+        margin: 0.5rem auto;
+        width: 80%;
+    }
+}
